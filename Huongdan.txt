@@ -1,0 +1,5 @@
+AudioApp08NguyenLeHoangThanhDogSound
++App[Visual Studio 2019 : .NET Framework 4.6.1+Setup]
++ AudioApp08NguyenLeHoangThanhDogSound.bak [MS.SQL Server 2014]
++ AudioApp08NguyenLeHoangThanhDogSound200603.docx
++Huongdan.txt

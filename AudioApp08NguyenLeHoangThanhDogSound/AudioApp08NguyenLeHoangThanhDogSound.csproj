@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{267F1A8B-A898-49A7-AF3A-D0B5781116C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AudioApp_08_NguyenLeHoangThanh</RootNamespace>
+    <AssemblyName>AudioApp_08_NguyenLeHoangThanh</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="irrKlang.NET4">
+      <HintPath>..\..\HOC TAP\HOC\LapTrinhAmThanh\irrKlang-1.3.0\bin\dotnet-4\irrKlang.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Audio.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AudioirrKlang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AudioirrKlang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrAudioWMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrAudioWMP.Designer.cs">
+      <DependentUpon>FrAudioWMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrBT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrBT.Designer.cs">
+      <DependentUpon>FrBT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrKlang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrKlang.Designer.cs">
+      <DependentUpon>FrKlang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrMain.Designer.cs">
+      <DependentUpon>FrMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Irr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Irr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrAudioWMP.resx">
+      <DependentUpon>FrAudioWMP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrBT.resx">
+      <DependentUpon>FrBT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrKlang.resx">
+      <DependentUpon>FrKlang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrMain.resx">
+      <DependentUpon>FrMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Audio.xsc">
+      <DependentUpon>Audio.xsd</DependentUpon>
+    </None>
+    <None Include="Audio.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Audio.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Audio.xss">
+      <DependentUpon>Audio.xsd</DependentUpon>
+    </None>
+    <None Include="AudioirrKlang.xsc">
+      <DependentUpon>AudioirrKlang.xsd</DependentUpon>
+    </None>
+    <None Include="AudioirrKlang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AudioirrKlang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AudioirrKlang.xss">
+      <DependentUpon>AudioirrKlang.xsd</DependentUpon>
+    </None>
+    <None Include="Irr.xsc">
+      <DependentUpon>Irr.xsd</DependentUpon>
+    </None>
+    <None Include="Irr.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Irr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Irr.xss">
+      <DependentUpon>Irr.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AudioFiles\banditb3.mp3" />
+    <Content Include="AudioFiles\banditb3.wav" />
+    <Content Include="AudioFiles\bark.mp3" />
+    <Content Include="AudioFiles\bark.wav" />
+    <Content Include="AudioFiles\bark3.mp3" />
+    <Content Include="AudioFiles\bark3.wav" />
+    <Content Include="AudioFiles\barks.mp3" />
+    <Content Include="AudioFiles\barks.wav" />
+    <Content Include="AudioFiles\bill.mp3" />
+    <Content Include="AudioFiles\bill.wav" />
+    <Content Include="AudioFiles\chasdog.mp3" />
+    <Content Include="AudioFiles\chasdog.wav" />
+    <Content Include="AudioFiles\deepbark.mp3" />
+    <Content Include="AudioFiles\deepbark.wav" />
+    <Content Include="AudioFiles\dog-2.mp3" />
+    <Content Include="AudioFiles\dog-2.wav" />
+    <Content Include="AudioFiles\dog.mp3" />
+    <Content Include="AudioFiles\dog.wav" />
+    <Content Include="AudioFiles\dog2.mp3" />
+    <Content Include="AudioFiles\dog2.wav" />
+    <Content Include="AudioFiles\dog3.mp3" />
+    <Content Include="AudioFiles\dog3.wav" />
+    <Content Include="AudioFiles\dog4.mp3" />
+    <Content Include="AudioFiles\dog4.wav" />
+    <Content Include="AudioFiles\dog5.mp3" />
+    <Content Include="AudioFiles\dog5.wav" />
+    <Content Include="AudioFiles\dogbark.mp3" />
+    <Content Include="AudioFiles\dogbark.wav" />
+    <Content Include="AudioFiles\dogbark2.mp3" />
+    <Content Include="AudioFiles\dogbark2.wav" />
+    <Content Include="AudioFiles\dogbark3.mp3" />
+    <Content Include="AudioFiles\dogbark3.wav" />
+    <Content Include="AudioFiles\dogbark5.mp3" />
+    <Content Include="AudioFiles\dogbark5.wav" />
+    <Content Include="AudioFiles\dogbrk.mp3" />
+    <Content Include="AudioFiles\dogbrk.wav" />
+    <Content Include="AudioFiles\dogs.mp3" />
+    <Content Include="AudioFiles\dogs.wav" />
+    <Content Include="AudioFiles\dogwhine.mp3" />
+    <Content Include="AudioFiles\dogwhine.wav" />
+    <Content Include="AudioFiles\dog_drinking.mp3" />
+    <Content Include="AudioFiles\dog_drinking.wav" />
+    <Content Include="AudioFiles\dSHAKE.mp3" />
+    <Content Include="AudioFiles\dSHAKE.wav" />
+    <Content Include="AudioFiles\Howl.mp3" />
+    <Content Include="AudioFiles\Howl.wav" />
+    <Content Include="AudioFiles\howl2.mp3" />
+    <Content Include="AudioFiles\howl2.wav" />
+    <Content Include="AudioFiles\HowlCoyoteC.mp3" />
+    <Content Include="AudioFiles\HowlCoyoteC.wav" />
+    <Content Include="AudioFiles\lubark.mp3" />
+    <Content Include="AudioFiles\lubark.wav" />
+    <Content Include="AudioFiles\pk9.mp3" />
+    <Content Include="AudioFiles\pk9.wav" />
+    <Content Include="AudioFiles\pup1.mp3" />
+    <Content Include="AudioFiles\pup1.wav" />
+    <Content Include="AudioFiles\pup2.mp3" />
+    <Content Include="AudioFiles\pup2.wav" />
+    <Content Include="AudioFiles\pup3.mp3" />
+    <Content Include="AudioFiles\pup3.wav" />
+    <Content Include="AudioFiles\pup4.mp3" />
+    <Content Include="AudioFiles\pup4.wav" />
+    <Content Include="AudioFiles\pup5.mp3" />
+    <Content Include="AudioFiles\pup5.wav" />
+    <Content Include="AudioFiles\pup6.mp3" />
+    <Content Include="AudioFiles\pup6.wav" />
+    <Content Include="AudioFiles\pupwhimper.mp3" />
+    <Content Include="AudioFiles\pupwhimper.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
